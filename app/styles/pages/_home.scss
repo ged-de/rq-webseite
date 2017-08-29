@@ -1,0 +1,105 @@
+.jumbotron {
+  background-image: url("../images/iStock-680058904.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 80%;
+
+  margin-bottom: 0;
+
+  .catcher{
+    background-color: rgba($brand-primary, .9);
+    padding: 20px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .catcher{
+      padding: 60px;
+
+      form{
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+section#start-topdrei{
+  background-color: #eee;
+  article{
+
+  }
+  .social-wrapper{ //col-12 col-md-4 col-lg-5 offset-md-2 offset-lg-1
+    color: $headings-color;
+    background-color: #eee;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 3rem 0;
+    text-align: center;
+    @include make-col-ready();
+    @include media-breakpoint-down(lg){
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(lg){
+      @include make-col(5);
+      @include make-col-offset(1);
+    }
+    h2{
+      font-size: 1.25rem;
+      line-height: 1.5em;
+      font-weight: bold;
+      padding-bottom: 2rem;
+    }
+    .fa.fa-comments{
+      color: #ccc;
+      font-size: 6rem;
+    }
+    &:hover{
+      text-decoration: none;
+      // color: #fff;
+
+      .fa.fa-comments{
+        color: $brand-primary;
+      }
+    }
+    // .ebay-link{
+    //   color: #eee;
+    //   padding: 4rem auto;
+    //   font-size: 6rem;
+    //   font-weight: bold;
+    //   &:hover{
+    //     text-decoration: none;
+    //   }
+    // }
+  }
+  // .section-images.brands{ //col-12 col-md-4 col-lg-5 offset-md-2 offset-lg-1
+  //   margin-top: auto;
+  //   margin-bottom: auto;
+  //   @include make-col-ready();
+  //   @include media-breakpoint-down(lg){
+  //     margin-top: 3rem;
+  //     margin-bottom: 0;
+  //     @include make-col(12);
+  //   }
+  //   @include media-breakpoint-up(lg){
+  //     @include make-col(5);
+  //     @include make-col-offset(1);
+  //   }
+  //   .brand{//col-6 col-md-12 col-lg-6
+  //     text-align: center;
+  //     @include make-col-ready();
+  //     @include media-breakpoint-down(md){
+  //       padding-bottom: 2rem;
+  //       @include make-col(6);
+  //     }
+  //     @include media-breakpoint-up(md){
+  //       @include make-col(3);
+  //     }
+  //     @include media-breakpoint-up(lg){
+  //       margin-bottom: 2rem;
+  //       @include make-col(12);
+  //       // @include make-col-offset(4);
+  //
+  //     }
+  //   }
+  // }
+}

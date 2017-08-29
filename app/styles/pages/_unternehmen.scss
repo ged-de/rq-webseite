@@ -1,0 +1,25 @@
+section#unternehmen-teaser{
+  h1{
+    font-size: 1.75rem;
+    line-height: 1.25em;
+  }
+}
+
+section#unternehmen-top{
+  background-image: url("../images/unternehmen-reifenBg.png");
+  .intro-pad{ //col-12 col-lg-8
+    // background-color: rgba($brand-primary, .9);
+    color: $brand-primary;
+    padding: 20px;
+    @include make-col-ready();
+    @include media-breakpoint-up(sm) {
+      padding: 60px;
+    }
+    @include media-breakpoint-down(lg){
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(lg){
+      @include make-col(8);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+section#kontakt-article{
+  background-color:#F7D63E;
+  article{
+    @extend .container;
+    .kontakt-left{//col-12 col-lg-7
+      @include make-col-ready();
+      @include media-breakpoint-down(lg){
+        @include make-col(12);
+      }
+      @include media-breakpoint-up(lg){
+        @include make-col(7);
+      }
+    }
+    .kontakt-right{//col-12 col-lg-4 offset-lg-1
+      @include make-col-ready();
+      @include media-breakpoint-down(lg){
+        @include make-col(12);
+      }
+      @include media-breakpoint-up(lg){
+        @include make-col(4);
+        @include make-col-offset(1);
+      }
+      dl{@extend .row;}
+      dt,dd{
+        @include make-col-ready();
+      }
+      dl#kontaktdaten{
+        dt{
+          @include make-col(3);
+        }
+        dd{
+          @include make-col(9);
+        }
+      }
+      dl#opentime{
+        dt{ //col-6 col-sm-4 col-lg-6
+          font-weight: normal;
+          @include make-col(6);
+          @include media-breakpoint-up(sm){
+            @include make-col(4);
+          }
+          @include media-breakpoint-up(lg){
+            @include make-col(6);
+          }
+        }
+        dd{ // col-6 col-sm-8 col-lg-6 text-right
+          text-align: right;
+          @include make-col(6);
+          @include media-breakpoint-up(sm){
+            @include make-col(8);
+          }
+          @include media-breakpoint-up(lg){
+            @include make-col(6);
+          }
+        }
+      }
+    }
+  }
+}
